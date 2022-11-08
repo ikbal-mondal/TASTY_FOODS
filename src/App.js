@@ -26,7 +26,7 @@ function App() {
            element:<Home></Home>
          },
          {
-           path:'/all_service',
+           path:'/all-service',
            element:<All_Service></All_Service>
          },
          {

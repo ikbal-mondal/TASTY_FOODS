@@ -58,7 +58,7 @@ const NavbarMenu = () => {
             </li>
             <li>
               <Link
-              to='/all_service'
+              to='/all-service'
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
