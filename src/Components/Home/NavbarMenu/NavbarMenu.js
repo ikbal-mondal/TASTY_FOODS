@@ -1,8 +1,24 @@
 import React, { useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const NavbarMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const {user,logOut} = useContext(AuthContext)
+
+    const handleLogOut = () => {
+      logOut()
+        .then((result) => {
+          
+          
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      }
+
+
     return (
         <div class="bg-gray-900 ">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -54,17 +70,19 @@ const NavbarMenu = () => {
           </ul>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
-            <li>
+     
+   
               <Link
-              to='/login'
-                aria-label="Product pricing"
-                title="Product pricing"
-                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                              <button className="btn btn-outline btn-info">Log In</button>
+           to='/login'
+            aria-label="Product pricing"
+            title="Product pricing"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+          >
+          <button className="btn btn-outline btn-info">Log In</button>
 
-              </Link>
-            </li>
+           </Link>
+        
+       
             </li>
           </ul>
           <div class="lg:hidden">

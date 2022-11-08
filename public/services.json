@@ -5,6 +5,7 @@
         "title": "Cheeseburger",
         "img": "https://ibb.co/ZWjDdRC",
         "price": "25",
+        "rating": "3.7",
         "description": "Sometimes you’re just in the mood for a good ol’ juicy hamburger. The type that’s succulent and gloriously flavorful. But when you’re entertaining, cooking hamburgers for a crowd is no easy joke. That’s why we’re bringing you these fun cheeseburger sliders instead! Baked on a single tray, these are an easy way to impress a crowd — and they definitely don’t skimp on the flavor. Combine the beef, salt, pepper, and garlic powder in a 9x13-inch (23x33-cm) rimmed baking dish, mixing thoroughly, then pressing into a flat, even layer. Bake for 20 minutes. Drain the liquid and set the cooked beef aside. Brush the tops of the rolls with melted butter and sprinkle the sesame seeds on top. Bake for 20 minutes, or until the bread is golden brown and the cheese is melted."
         
     },
@@ -14,6 +15,7 @@
         "title": "One-Pan BBQ Baby",
         "img": "https://ibb.co/0X9zskJ",
         "price": "36",
+        "rating": "4.6",
         "description": " Season the ribs with salt, black pepper, paprika, cayenne pepper, oregano, and brown sugar. Rub in the seasonings evenly on both sides. Place the ribs on a baking sheet lined with foil. Cover the ribs with foil.Bake for 2 hours Increase the oven temperature to 500˚F (260˚C). Carefully uncover the ribs. Spread BBQ sauce evenly on top of the ribs. Place green beans on the sides of the pan. Season the green beans with salt. Bake for 10 minutes. Transfer the ribs to a cutting board. Cut between the bones to separate into individual ribs. Serve with green beans.  rack baby back ribs, halved teaspoon black pepper  teaspoons dried oregano "
         
     },
@@ -23,6 +25,7 @@
         "title": "Chicken Nachos",
         "img": "https://ibb.co/716yPzK",
         "price": "36",
+        "rating": "4.2",
         "description": "Preheat oven to 350°F (176°C). Heat the oil in a pan over high heat. Cook the chicken with salt, pepper, garlic powder, and chili powder for two to three minutes. Add the barbecue sauce and cook until the sauce has reduced by about half, about five minutes. Remove from heat. In a large skillet, spread out two large handfuls of tortilla chips. Layer with half of the barbecue chicken, followed by half of the cheese, onion, tomato, bacon, and parsley. Repeat with the remaining ingredients  making it decided to try it with canned chicken and it’s amazing! The chicken shreds nicely giving you more chicken with each bite "
         
     },
@@ -32,6 +35,7 @@
         "title": "Extravaganza",
         "img": "https://img.buzzfeed.com/buzzfeed-static/static/2022-11/4/15/campaign_images/188d8cf73c6c/52-delicious-ways-to-use-leftover-rotisserie-chic-2-3814-1667576743-1_dblbig.jpg?resize=600:*&output-format=auto&output-quality=auto",
         "price": "150.00",
+        "rating": "3.9",
         "description": "In a pot, heat oil and add chicken Season chicken with salt and pepper Add broth, heavy cream, and pasta, and bring to a boil. Cover and reduce the heat to a simmer for 15-20 min. Turn off heat and stir in 1 ½ cups (165 grams) of parmesan cheese. Pour half of the pasta into a greased 11×7 inch or 9×13 inch (28x18 cm or 33x23 cm) baking dish. Layer the remaining half of the pasta evenly on top. Sprinkle evenly with 1 cup of mozzarella (115 grams) and ½ cup (55 grams) of parmesan. Broil 10 - 15 minutes, or until the cheese is golden brown. Remove and sprinkle with fresh parsley. Sprinkle evenly with 1 cup (115 grams) of mozzarella cheese.   "
         
     },
@@ -41,6 +45,7 @@
         "title": "Garlic Mac & Cheese",
         "img": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/67dc39c0847549b5819405d37b8c0d9f.jpeg?resize=1000:*&output-format=auto&output-quality=auto",
         "price": "46",
+        "rating": "4.5",
         "description": "Boil pasta according to package directions. Drain and set aside. In a frying pan, cook bacon until crispy. Once crispy, add minced garlic. Once roasted, drain bacon fat and add bacon and garlic to a bowl. Cover with aluminum foil or plastic wrap Add dried basil to boiled pasta and stir. In the same pot used to boil pasta, add butter, heavy cream, shredded cheeses, bacon and garlic over medium heat. Add pasta and stir until cheese is melted and mixture is well-combined. Serve, garnishing with more basil and red pepper flakes as desired.dried basil to boiled pasta and stir. In the same pot used to boil pasta, add butter, heavy cream, shredded cheeses, bacon and garlic ream, shredded cheeses, bacon and garlic over medium heat. Add pasta and stir until cheese is melted and mixture is well-combined. Serve, garnishing with more basil and red pepper "
     
     },
@@ -50,6 +55,7 @@
         "title": "Peppermint Cookies",
         "img": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/408298.jpg?resize=600:*&output-format=auto&output-quality=auto",
         "price": "56",
+        "rating": "4.",
         "description": "In a medium bowl, whisk together the flour, cocoa powder, baking soda, baking powder, and salt. In a large bowl, cream together the butter, granulated sugar, and brown sugar with an electric hand mixer on medium speed until creamy, about 1 minute. Add the egg, vanilla, and peppermint extract and mix until smooth, about 1 minute more. In a large bowl, cream together the butter, granulated sugar, and brown sugar with an electric hand mixer on medium speed until creamy, about 1 minute. Add the egg, vanilla, and peppermint extract and mix until smooth, about 1 minute more. Add the dry ingredients to the wet ingredients and mix on low speed until just combined, about 2 minutes. Fold in the chocolate chips, ½ cup Milk Chocolate M&M’s®, and ½ cup crushed peppermint candies with a rubber spatula. Chill the dough in the refrigerator for 15–20 minutes. Preheat the oven to 350°F (180°C). Line 2 baking sheets with parchment paper. Scoop the dough into 1½- to 2-inch balls and place on the prepared baking sheets, spacing 2 inches apart. Press the remaining M&M’s®and crushed peppermint candies into the tops of the cookies."
         
     }
