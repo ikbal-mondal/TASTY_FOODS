@@ -7,83 +7,64 @@ const NavbarMenu = () => {
         <div class="bg-gray-900 ">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
+          
           <Link
            to='/'
-            aria-label="Company"
-            title="Company"
+            aria-label=" Tasty Foods"
+            title=" Tasty Foods"
             class="inline-flex items-center"
           >
-            <svg
-              class="w-8 text-teal-accent-400"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
+          <img style={{width:'50px',height:'50px' } } className='rounded-3xl' src='https://yt3.ggpht.com/ytc/AMLnZu9PCeBDcw50j5qfN-u0IXDgyb4XpyoCgBIrXxEEFw=s900-c-k-c0x00ffffff-no-rj' alt="" />
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Company
+            Tasty Foods
             </span>
           </Link>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
               to='/home'
-                aria-label="Our product"
-                title="Our product"
+                aria-label="Home"
+                title="Home"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                Home
               </Link>
             </li>
             <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+              <Link
+                to='/addReview'
+                aria-label="Home"
+                title="Home"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Features
-              </a>
+               AddReview
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+              to='/all_service'
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Pricing
-              </a>
+                All Services
+              </Link>
             </li>
-            <li>
-              <a
-                href="/"
-                aria-label="About us"
-                title="About us"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                About us
-              </a>
-            </li>
+        
           </ul>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/"
-                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
+            <li>
+              <Link
+              to='/login'
+                aria-label="Product pricing"
+                title="Product pricing"
+                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Sign up
-              </a>
+                              <button className="btn btn-outline btn-info">Log In</button>
+
+              </Link>
+            </li>
             </li>
           </ul>
           <div class="lg:hidden">
@@ -113,31 +94,17 @@ const NavbarMenu = () => {
                 <div class="p-5 bg-white border rounded shadow-sm">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
-                        aria-label="Company"
-                        title="Company"
-                        class="inline-flex items-center"
-                      >
-                        <svg
-                          class="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
-                        </span>
-                      </a>
+                    <Link
+           to='/'
+            aria-label=" Tasty Foods"
+            title=" Tasty Foods"
+            class="inline-flex items-center"
+          >
+          <img style={{width:'50px',height:'50px' } } className='rounded-3xl' src='https://yt3.ggpht.com/ytc/AMLnZu9PCeBDcw50j5qfN-u0IXDgyb4XpyoCgBIrXxEEFw=s900-c-k-c0x00ffffff-no-rj' alt="" />
+            <span class="ml-2 text-xl font-bold tracking-wide text-gray-900 uppercase">
+            Tasty Foods
+            </span>
+          </Link>
                     </div>
                     <div>
                       <button
@@ -157,56 +124,49 @@ const NavbarMenu = () => {
                   </div>
                   <nav>
                     <ul class="space-y-4">
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Product
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Features
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Pricing
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="About us"
-                          title="About us"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          About us
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
-                        </a>
-                      </li>
+                    <li>
+              <Link
+              to='/home'
+                aria-label="Home"
+                title="Home"
+                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+               Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/addReview'
+                aria-label="Home"
+                title="Home"
+                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+               AddReview
+              </Link>
+            </li>
+            <li>
+              <Link
+              to='/all_service'
+                aria-label="Product pricing"
+                title="Product pricing"
+                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                All Services
+              </Link>
+            </li>
+            <li>
+              
+            </li>
+               <Link
+              to='/login'
+                aria-label="Product pricing"
+                title="Product pricing"
+                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                <button className="btn btn-outline btn-info w-full">Log In</button>
+                
+              </Link>
+    
                     </ul>
                   </nav>
                 </div>

@@ -1,11 +1,9 @@
 import React from 'react';
-import Service from '../Service';
 
 
 const Banner = () => {
     return (
-      <> 
-        <div className="relative border-y-2 border-red-800">
+        <div className="relative ">
         <img
           src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
           className="absolute inset-0 object-cover w-full h-full"
@@ -105,7 +103,7 @@ const Banner = () => {
                     <div className="mt-4 mb-2 sm:mb-4">
                       <button
                         type="submit"
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-slate-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                       >
                         Subscribe
                       </button>
@@ -120,8 +118,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <Service></Service>
-      </>
+      
     );
 };
 

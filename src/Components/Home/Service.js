@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = () => {
     return (
+        <>
         <section class="bg-lime-300 mt-12 mb-12 dark:bg-gray-900">
         <div class="container px-6 py-12 mx-auto">
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -37,6 +39,12 @@ const Service = () => {
             </div>
         </div>
     </section>
+      <div className="text-center">
+       <Link to='/all_service'>
+       <button className='btn btn-outline btn-primary '> Show All Services</button>
+       </Link>
+      </div>
+    </>
     );
 };
 
