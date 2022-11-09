@@ -12,7 +12,7 @@ const Banner = () => {
         />
         <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
           <svg
-            className="absolute inset-x-0 bottom-0 text-white"
+            className="absolute inset-x-0 bottom-0 text-indigo-600 opacity-60"
             viewBox="0 0 1160 163"
           >
             <path
