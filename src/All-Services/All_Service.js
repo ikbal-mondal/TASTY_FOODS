@@ -24,7 +24,7 @@ const All_Service = () => {
     return (
         
            
-          <div className="grid grid-cols-3 gap-4 container mx-auto ">
+          <div className="grid lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-2 my-12   gap-6 container mx-auto  ">
                
                {   
             

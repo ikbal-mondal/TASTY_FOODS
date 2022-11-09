@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import All_Service from './All-Services/All_Service';
+import ServiceDetails from './All-Services/ServiceDetails';
 import './App.css';
 import AddReview from './Components/AddReviw/AddReview';
 import Home from './Components/Home/Home';
@@ -40,6 +41,10 @@ function App() {
          {
            path:'/register',
            element:<Register></Register>
+         },
+         {
+           path:'/serviceDetails/:id',
+           element:<ServiceDetails></ServiceDetails>
          },
          
        
