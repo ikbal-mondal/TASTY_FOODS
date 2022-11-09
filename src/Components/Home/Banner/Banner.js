@@ -24,7 +24,7 @@ const Banner = () => {
             <div className="flex flex-col items-center justify-between xl:flex-row">
               <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-black sm:text-4xl sm:leading-none">
-                  <img style={{width:'400px', borderRadius:'50%'}}  src="https://healthyrecipesblogs.com/wp-content/uploads/2013/02/tandoori-chicken-featured-2021.jpg" alt="" />
+                 <h1>TASTY FOODS</h1>
                 </h2>
               
                 

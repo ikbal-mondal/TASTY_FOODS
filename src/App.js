@@ -6,6 +6,7 @@ import './App.css';
 import AddReview from './Components/AddReviw/AddReview';
 import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
+import ErrorHandlePage from './ErrorHndlePage/ErrorHandlePage';
 import Main from './Layout/Main';
 import Login from './Login&Register/Login/Login';
 import Register from './Login&Register/Register/Register';
@@ -53,6 +54,10 @@ function App() {
            loader:({params}) => fetch(`http://localhost:5000/services/${params.id}`)
            
          },
+         {
+          path:'/*',
+          element:<ErrorHandlePage></ErrorHandlePage>
+        },
          
        
       ]
