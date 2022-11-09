@@ -4,6 +4,7 @@ import All_Service from './All-Services/All_Service';
 import ServiceDetails from './All-Services/ServiceDetails';
 import './App.css';
 import AddReview from './Components/AddReviw/AddReview';
+import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
 import Main from './Layout/Main';
 import Login from './Login&Register/Login/Login';
@@ -43,8 +44,14 @@ function App() {
            element:<Register></Register>
          },
          {
+           path:'/blogs',
+           element:<Blogs></Blogs>
+         },
+         {
            path:'/serviceDetails/:id',
-           element:<ServiceDetails></ServiceDetails>
+           element:<ServiceDetails></ServiceDetails>,
+           loader:({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+           
          },
          
        

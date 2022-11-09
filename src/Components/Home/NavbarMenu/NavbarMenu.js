@@ -67,6 +67,17 @@ console.log(user);
               </Link>
             </li>
         
+            <li>
+              <Link
+              to='/blogs'
+                aria-label="Product pricing"
+                title="Product pricing"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                Blogs
+              </Link>
+            </li>
+        
           </ul>
           <ul class="flex items-center hidden space-x-8 lg:flex">
       

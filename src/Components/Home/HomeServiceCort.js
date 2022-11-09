@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const HomeServiceCort = ({foodsService}) => {
 
-    const {title,img,price,rating,description,_id} = foodsService;
+    const {title,img,price,description,_id} = foodsService;
     return (
         <>
         <div>
