@@ -1,10 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
+import AddReviewFom from './AddReviewFom';
+
 const ServiceDetails = () => {
     const {title,img,price,rating,description} = useLoaderData();
     return (
-        
+         <>
             <div className="container mx-auto space-y-12 shadow-2xl shadow-red-200 my-8 p-4">
 		<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 			<img src={img} alt="" className="h-80 dark:bg-gray-500 aspect-video" />
@@ -16,6 +18,9 @@ const ServiceDetails = () => {
 			</div>
 		</div>
         </div>
+
+          <AddReviewFom></AddReviewFom>
+		</>
     );
 };
 
