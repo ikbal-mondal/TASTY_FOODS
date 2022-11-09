@@ -40,7 +40,14 @@ const handleGoogleSignIn = () => {
   };
 
     return (
-        <div>
+        <div className="grid lg:grid-cols-2  md:grid-cols-2 sm:grid-cols-1   gap-6 container mx-auto  ">
+
+     <div className="">
+        
+     <img src="https://egymerch.com/site_assets/assets/imgs/login/login.png" alt="" />
+     </div>
+
+            
          <section className="bg-slate-100 ">
     <div className="container flex items-center justify-center min-h-screen px-6 mx-auto">
         <Form onSubmit={handleLoginFrom} className="w-full max-w-md px-8 py-8 rounded bg-slate-300 shadow-2xl shadow-slate-600">
