@@ -19,9 +19,9 @@ const ServiceDetails = () => {
 		</div>
         </div>
 
-          <div className="bg-slate-500 ">
+         
 		  <AddReviewFom></AddReviewFom>
-		  </div>
+		 
 		</div>
     );
 };

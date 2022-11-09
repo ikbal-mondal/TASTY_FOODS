@@ -5,12 +5,12 @@ import { AuthContext } from '../Context/AuthProvider/AuthProvider';
 const AddReviewFom = () => {
 	const {user} = useContext(AuthContext)
     return (
-        <div  className='grid lg:grid-cols-2 mg:grid-cols-2 ms:grid-cols-1  '>
+        <div  className='grid lg:grid-cols-2 mg:grid-cols-2 ms:grid-cols-1 items-center container mx-auto '>
           {
 			user && 
 			user.email && 
 			<section className="p-6 dark:text-gray-100 ">
-	<Form  className="  rounded-md shadow bg-slate-300 p-8 ng-untouched ng-pristine ng-valid">
+	<Form  className="  rounded-md shadow bg-cyan-300 p-8 ng-untouched ng-pristine ng-valid">
 		<h2 className=" text-3xl text-center mb-3 font-bold leading-tight">Add Your Review </h2>
 	     <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 ">
 		
@@ -30,13 +30,25 @@ const AddReviewFom = () => {
           {
             !user &&
 
-          <div className="shadow-2xl shadow-slate-900 py-4 pb-12 container mx-auto rounded-2xl">
+          <div className="shadow-2xl shadow-slate-400 py-4 pb-12 container mx-auto rounded-2xl">
 			 <img style={{width:'200px'}} className='mx-auto' src="https://cdn-icons-png.flaticon.com/512/272/272354.png" alt="" />
 			  <h1 className='text-center text-5xl opacity-50 font-semibold '>Please Login to add a review</h1>
 		  </div>
       
           }
 
+
+         {
+			 !user && 
+			 
+			<img src="https://img.freepik.com/premium-vector/cyber-security-concept-people-work-screen-protecting-data-confidentiality-illustration_138260-701.jpg" alt="" />
+		 }
+
+         {
+			 user && 
+			 user.email && 
+			<img src="http://unblast.com/wp-content/uploads/2020/10/Feedback-Vector-Illustration.jpg" alt="" />
+		 }
 
         </div>
     );
