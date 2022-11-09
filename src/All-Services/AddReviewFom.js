@@ -4,7 +4,7 @@ import { Form } from 'react-router-dom';
 const AddReviewFom = () => {
     return (
         <div>
-                  <section className="p-6 dark:text-gray-100 w-6/12 mx-auto">
+                  <section className="p-6 dark:text-gray-100 ">
 	<Form  className="  rounded-md shadow bg-slate-300 p-8 ng-untouched ng-pristine ng-valid">
 		<h2 className=" text-3xl text-center mb-3 font-bold leading-tight">Add Your Review </h2>
 	     <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 ">

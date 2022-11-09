@@ -23,9 +23,12 @@ const Home = () => {
 
 
     return (
+       <>
+       <Banner></Banner>
+       
         <div className='container mx-auto'>
          <div>
-            <Banner></Banner>
+            
             
             <div className="grid lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-2 mt-12 mb-6   gap-6   ">
             {
@@ -43,6 +46,7 @@ const Home = () => {
         <Make></Make>
         <Gallery></Gallery>
         </div>
+        </>
     );
 };
 
