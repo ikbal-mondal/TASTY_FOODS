@@ -1,26 +1,13 @@
 import React, { useEffect } from 'react';
-import { useState } from 'react';
-import ShowAllServices from './ShowAllServices';
+import { useLoaderData } from 'react-router-dom';
+import AllService from './AllService';
 
 
 
 const All_Service = () => {
-  
-  
-    const  [services,setServices] = useState([])
-    
-    useEffect(()=>{
- 
-          fetch('http://localhost:5000/services')
-          .then(res => res.json())
-          .then(data => {
-            console.log(data);
-            setServices(data)
-        })
-    },[])
- 
 
-
+const services = useLoaderData()
+ console.log(services);
     return (
         
            
@@ -28,9 +15,9 @@ const All_Service = () => {
                
                {   
             
-            services.map(FoodService =>
-            <ShowAllServices key={FoodService._id} FoodService={FoodService}></ShowAllServices>
-            )
+            services.map(FoodService => <AllService key={FoodService._id} FoodService={FoodService}></AllService>)
+            
+           
               
             
             }

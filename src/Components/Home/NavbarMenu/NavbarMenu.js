@@ -46,16 +46,7 @@ console.log(user);
                Home
               </Link>
             </li>
-            <li>
-              <Link
-                to='/addReview'
-                aria-label="Home"
-                title="Home"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-               AddReview
-              </Link>
-            </li>
+            
             <li>
               <Link
               to='/all-service'
@@ -66,7 +57,42 @@ console.log(user);
                 All Services
               </Link>
             </li>
-        
+  
+            {
+            user &&
+            user.email &&
+            
+            <li>
+            <Link
+              to='/addReview'
+              aria-label="Home"
+              title="Home"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+            >
+             My Reviews
+            </Link>
+          </li>
+            
+            }
+
+         {
+            user &&
+            user.email && 
+             
+            <li>
+            <Link
+              to='/addService'
+              aria-label="Home"
+              title="Home"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+            >
+             Add Service
+            </Link>
+          </li>
+            
+            }
+           
+           
             <li>
               <Link
               to='/blogs'
@@ -83,7 +109,7 @@ console.log(user);
       
           {
             user &&
-            user.email &&  <button onClick={handleLogOut} className="btn btn-outline btn-info"> log out</button>
+            user.email &&  <button onClick={handleLogOut} className="btn btn-outline btn-error"> log out</button>
       
           }
              {
@@ -94,7 +120,7 @@ console.log(user);
             title="Product pricing"
             class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
             >
-            <button className="btn btn-outline btn-info">Log In</button>
+            <button className="btn btn-outline btn-success">Log In</button>
             
             </Link>
       

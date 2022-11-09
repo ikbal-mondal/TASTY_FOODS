@@ -6,10 +6,12 @@ import './App.css';
 import AddReview from './Components/AddReviw/AddReview';
 import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
+import AddService from './Components/Home/NavbarMenu/AddService';
 import ErrorHandlePage from './ErrorHndlePage/ErrorHandlePage';
 import Main from './Layout/Main';
 import Login from './Login&Register/Login/Login';
 import Register from './Login&Register/Register/Register';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -30,11 +32,12 @@ function App() {
          },
          {
            path:'/all-service',
-           element:<All_Service></All_Service>
+           element:<All_Service></All_Service>,
+           loader:() => fetch('http://localhost:5000/allService')
          },
          {
            path:'/addReview',
-           element:<AddReview></AddReview>
+           element:<PrivateRoute><AddReview></AddReview></PrivateRoute>
          },
          {
            path:'/login',
@@ -54,6 +57,10 @@ function App() {
            loader:({params}) => fetch(`http://localhost:5000/services/${params.id}`)
            
          },
+         {
+          path:'/addService',
+          element:<PrivateRoute><AddService></AddService></PrivateRoute>
+        },
          {
           path:'/*',
           element:<ErrorHandlePage></ErrorHandlePage>

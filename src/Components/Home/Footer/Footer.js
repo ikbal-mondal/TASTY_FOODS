@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   
         return (
-            <div className="relative mt-24 bg-deep-purple-accent-400 bg-slate-200 ">
+            <div className="relative mt-24 bg-deep-purple-accent-400 bg-indigo-500 ">
               <svg
                 className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
                 preserveAspectRatio="none"
@@ -25,7 +25,7 @@ const Footer = () => {
             title=" Tasty Foods"
             class="inline-flex items-center"
           >
-          <img style={{width:'300px',height:'300px' } } className='rounded-3xl' src='https://yt3.ggpht.com/ytc/AMLnZu9PCeBDcw50j5qfN-u0IXDgyb4XpyoCgBIrXxEEFw=s900-c-k-c0x00ffffff-no-rj' alt="" />
+          <img style={{width:'70px',height:'70px' } } className='rounded-3xl' src='https://yt3.ggpht.com/ytc/AMLnZu9PCeBDcw50j5qfN-u0IXDgyb4XpyoCgBIrXxEEFw=s900-c-k-c0x00ffffff-no-rj' alt="" />
     
           </Link>
  
@@ -74,8 +74,8 @@ const Footer = () => {
         
                 
                 </div>
-                <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row bg-slate-600 rounded-2xl px-8">
-                  <p className="text-sm text-gray-100">
+                <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row bg-white rounded-2xl px-8">
+                  <p className="text-sm text-slate-900">
                     © Copyright 2020 Lorem Inc. All rights reserved.
                   </p>
                   <div className="flex items-center mt-4 space-x-4 sm:mt-0">
