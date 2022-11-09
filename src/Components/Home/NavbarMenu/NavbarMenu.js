@@ -6,7 +6,7 @@ import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 const NavbarMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const {user,logOut} = useContext(AuthContext)
-
+console.log(user);
     const handleLogOut = () => {
       logOut()
         .then((result) => {
@@ -69,21 +69,25 @@ const NavbarMenu = () => {
         
           </ul>
           <ul class="flex items-center hidden space-x-8 lg:flex">
-            <li>
-     
-   
-              <Link
-           to='/login'
+      
+          {
+            user &&
+            user.email &&  <button onClick={handleLogOut} className="btn btn-outline btn-info"> log out</button>
+      
+          }
+             {
+            !user &&
+            <Link
+            to='/login'
             aria-label="Product pricing"
             title="Product pricing"
             class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-          >
-          <button className="btn btn-outline btn-info">Log In</button>
-
-           </Link>
-        
-       
-            </li>
+            >
+            <button className="btn btn-outline btn-info">Log In</button>
+            
+            </Link>
+      
+          }
           </ul>
           <div class="lg:hidden">
             <button

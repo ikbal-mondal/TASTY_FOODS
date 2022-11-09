@@ -6,7 +6,7 @@ import app from '../../Firebase.init/Firebase.init';
 export const AuthContext = createContext()
  const auth = getAuth(app)
 const AuthProvider = ({children}) => {
-    console.log(children);
+   
 
 const [user, setUser] = useState({});
 const [loading, setLoading] = useState(true);
@@ -39,7 +39,7 @@ const createUser = (email, password) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (logInUser) => {
       setUser(logInUser);
-      console.log("auth change", logInUser);
+      
     });
 
     return () => {

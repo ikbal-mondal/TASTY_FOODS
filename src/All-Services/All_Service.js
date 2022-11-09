@@ -1,26 +1,44 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import ShowAllServices from './ShowAllServices';
+
 
 
 const All_Service = () => {
   
   
-    // const  [services,setServices] = useState()
+    const  [services,setServices] = useState([])
     
-    // useEffect(()=>{
+    useEffect(()=>{
  
-    //       fetch('http://localhost:5000/services')
-    //       .then(res => res.json())
-    //       .then(data => setServices(data))
-    // },[])
+          fetch('http://localhost:5000/services')
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+            setServices(data)
+        })
+    },[])
  
- 
+
 
     return (
         
            
-          <div className="">
-   <h1>hello akhun ki tumi thik acho</h1>
+          <div className="grid grid-cols-3 gap-4 container mx-auto ">
+               
+               {   
+            
+            services.map(FoodService =>
+            <ShowAllServices key={FoodService._id} FoodService={FoodService}></ShowAllServices>
+            )
+              
+            
+            }
+
+
+
+
+
           </div>
     );
 };
