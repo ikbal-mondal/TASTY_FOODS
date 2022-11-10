@@ -37,7 +37,7 @@ function App() {
          },
          {
            path:'/addReview',
-           element:<PrivateRoute><AddReview></AddReview></PrivateRoute>
+           element:<AddReview></AddReview>
          },
          {
            path:'/login',
