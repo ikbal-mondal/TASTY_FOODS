@@ -1,6 +1,6 @@
 # TASTY FOODS
 
-## Live Site Link:[https://tasty-toods.web.app/serviceDetails/636a7f92c6a8fda23b027e6d](https://tasty-toods.web.app/serviceDetails/636a7f92c6a8fda23b027e6d)
+### Live Site Link:[https://tasty-toods.web.app/](https://tasty-toods.web.app/)
 
 ## What did I use to make this application? 
 
