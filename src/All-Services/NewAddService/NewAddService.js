@@ -12,7 +12,7 @@ const NewAddService = ({newService}) => {
 <div className="card-body">
   <h2 className="card-title">{title}</h2>
   <p>Price:$ {price}</p>
-  <p>{description.slice(0,100)}</p>
+  <p>{description && description.slice(0,100) + '...'}</p>
   <div className="card-actions justify-end">
    
     <Link to={`/serviceDetails/${_id}`}> <button  className="btn btn-primary">Details</button></Link>

@@ -11,14 +11,15 @@ const AddService = () => {
 	const title = from.title.value;
     const  price = from.price.value;
     const  email = from.email.value;
-	const photoURL = from.photoURL.value;
+	const img = from.photoURL.value;
+
 	const description = from.description.value
 
 	const CreateService = {
 		title,
 		price,
 		email,
-		photoURL,
+		img,
 		description
 	}
   

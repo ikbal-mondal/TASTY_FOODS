@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const NavbarMenu = () => {
+  const navigate = useNavigate()
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const {user,logOut} = useContext(AuthContext)
 console.log(user);
     const handleLogOut = () => {
       logOut()
         .then((result) => {
-          
+          navigate('/')
           
         })
         .catch((error) => {
@@ -193,16 +194,7 @@ console.log(user);
                Home
               </Link>
             </li>
-            <li>
-              <Link
-                to='/addReview'
-                aria-label="Home"
-                title="Home"
-                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-               AddReview
-              </Link>
-            </li>
+          
             <li>
               <Link
               to='/all_service'
@@ -213,18 +205,61 @@ console.log(user);
                 All Services
               </Link>
             </li>
+            
+            {
+            user &&
+            user.email &&
+            
             <li>
-              
-            </li>
-               <Link
-              to='/login'
-                aria-label="Product pricing"
-                title="Product pricing"
-                class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                <button className="btn btn-outline btn-info w-full">Log In</button>
-                
-              </Link>
+            <Link
+              to='/addReview'
+              aria-label="Home"
+              title="Home"
+              class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+            >
+             My Reviews
+            </Link>
+          </li>
+            
+            }
+
+         {
+            user &&
+            user.email && 
+             
+            <li>
+            <Link
+              to='/addService'
+              aria-label="Home"
+              title="Home"
+              class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+            >
+             Add Service
+            </Link>
+          </li>
+            
+            }
+
+
+
+{
+            user &&
+            user.email &&  <button onClick={handleLogOut} className="btn btn-outline btn-error"> log out</button>
+      
+          }
+             {
+            !user &&
+            <Link
+            to='/login'
+            aria-label="Product pricing"
+            title="Product pricing"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+            >
+            <button className="btn btn-outline btn-success">Log In</button>
+            
+            </Link>
+      
+          }
     
                     </ul>
                   </nav>

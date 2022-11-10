@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
-import { Form, json, useLoaderData } from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Form,  useLoaderData } from 'react-router-dom';
+import ShawReview from '../Components/AddReviw/ShawReview';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
 
 const AddReviewFom = () => {
 	const {user} = useContext(AuthContext)
 	const {title, _id} = useLoaderData()
-	console.log(`foods title : ${title}`);
+	const [reviews,setReviews] = useState([])
 
  const handleReviewFrom = event => {
 
@@ -15,6 +18,7 @@ const AddReviewFom = () => {
 	const rating = from.rating.value;
 	const message = from.message.value;
 
+	 
 
 	const reviews = {
 
@@ -23,6 +27,7 @@ const AddReviewFom = () => {
 		email: email,
 		rating:rating,
 		message: message,
+		photo:  user.photoURL,
         
 	}
   
@@ -48,10 +53,33 @@ const AddReviewFom = () => {
    
 	 
  }
+  useEffect(()=> {
+      
+	fetch(`http://localhost:5000/reviews/${_id}`)
+	.then(res => res.json())
+	.then(data => setReviews(data))
+
+  },[_id,reviews])
+  
+
 
 
     return (
-        <div  className='grid lg:grid-cols-2 mg:grid-cols-2 ms:grid-cols-1 items-center container mx-auto '>
+   <div className="">
+	
+	<div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+
+	{
+    reviews.map(review => <ShawReview
+	key={review._id}
+	review={review}
+	></ShawReview>)
+
+ }
+	</div>
+
+
+	<div  className='grid lg:grid-cols-2 mg:grid-cols-2 ms:grid-cols-1 items-center container mx-auto '>
           {
 			user && 
 			user.email && 
@@ -106,7 +134,9 @@ const AddReviewFom = () => {
 		 }
 
         </div>
-    );
-};
+    
+   </div>
+	);
+}; 
 
 export default AddReviewFom;

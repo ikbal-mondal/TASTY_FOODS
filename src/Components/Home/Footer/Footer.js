@@ -1,8 +1,10 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Footer = () => {
-  
+    const {user} = useContext(AuthContext)
         return (
             <div className="relative mt-24 bg-deep-purple-accent-400 bg-indigo-500 ">
               <svg
@@ -40,16 +42,42 @@ const Footer = () => {
                Home
               </Link>
             </li>
+           
+            {
+            user &&
+            user.email &&
+            
             <li>
-              <Link
-                to='/addReview'
-                aria-label="Home"
-                title="Home"
-                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
-              >
-               AddReview
-              </Link>
-            </li>
+            <Link
+              to='/addReview'
+              aria-label="Home"
+              title="Home"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+            >
+             My Reviews
+            </Link>
+          </li>
+            
+            }
+
+         {
+            user &&
+            user.email && 
+             
+            <li>
+            <Link
+              to='/addService'
+              aria-label="Home"
+              title="Home"
+              class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+            >
+             Add Service
+            </Link>
+          </li>
+            
+            }
+           
+           
             <li>
               <Link
               to='/all-service'

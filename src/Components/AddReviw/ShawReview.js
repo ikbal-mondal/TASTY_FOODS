@@ -1,24 +1,14 @@
 import React from 'react';
-import { useContext } from 'react';
-import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
-const ReviewCard = ({review,handleRemove}) => {
-	const {user} = useContext(AuthContext)
-    const {FoodName,email,rating,message,_id,} = review;
-
-
-
-
-
+const ShawReview = ({review}) => {
+    const {FoodName,email,rating,message,_id,photo} =  review;
     return (
         <div>
-          <div className="container flex flex-col shadow-2xl shadow-slate-900 my-8 w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
+             <div className="container flex flex-col shadow-2xl shadow-slate-900 my-8 w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4 items-center">
-	    <button onClick={() => handleRemove(_id)} className="btn btn-circle btn-outline">
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 20 20" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
-</button>
- <img style={{width:'30px', height:'30px', borderRadius:'50%'}} src="https://www.freeiconspng.com/thumbs/edit-icon-png/edit-new-icon-22.png" alt="" />
+	    
+  <img style={{width:'30px', height:'30px', borderRadius:'50%'}} src={photo} alt="" />
     
 			<div>
 				<h4 className="font-bold"> Food Name:  {FoodName}</h4>
@@ -42,4 +32,4 @@ const ReviewCard = ({review,handleRemove}) => {
     );
 };
 
-export default ReviewCard;
+export default ShawReview;
