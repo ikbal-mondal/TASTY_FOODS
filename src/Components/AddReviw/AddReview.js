@@ -11,7 +11,7 @@ const AddReview = () => {
 
     useEffect(() => {
       
-       fetch(`http://localhost:5000/reviews?email=${user && user.email}`)
+       fetch(`https://tasty-foods-server.vercel.app/reviews?email=${user && user.email}`)
 	   .then(res => res.json())
 	   .then(data => setReviews(data))
 
@@ -21,7 +21,7 @@ const AddReview = () => {
    
 		const Proceed = window.confirm('Are You Sure, You Want to delete');
 		if(Proceed){
-		   fetch(`http://localhost:5000/reviews/${id}`, {
+		   fetch(`https://tasty-foods-server.vercel.app/reviews/${id}`, {
 			   method: 'Delete'
 		   })
 		   .then(res => res.json())

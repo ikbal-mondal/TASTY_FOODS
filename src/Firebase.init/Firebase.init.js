@@ -2,12 +2,14 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBnd0q1WoEpXztV4lUfgSqtPuuKzHNOYZc",
-  authDomain: "tasty-toods.firebaseapp.com",
-  projectId: "tasty-toods",
-  storageBucket: "tasty-toods.appspot.com",
-  messagingSenderId: "325341830155",
-  appId: "1:325341830155:web:f4bd28f11751bfb3023b0e"
+
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+
 };
 
 // Initialize Firebase

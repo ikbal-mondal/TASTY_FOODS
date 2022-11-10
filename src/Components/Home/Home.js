@@ -12,7 +12,7 @@ const Home = () => {
     
     useEffect(()=>{
  
-          fetch('http://localhost:5000/services')
+          fetch('https://tasty-foods-server.vercel.app/services')
           .then(res => res.json())
           .then(data => {
             console.log(data);

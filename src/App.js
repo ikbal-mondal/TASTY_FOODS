@@ -33,7 +33,7 @@ function App() {
          {
            path:'/all-service',
            element:<All_Service></All_Service>,
-           loader:() => fetch('http://localhost:5000/allService')
+           loader:() => fetch('https://tasty-foods-server.vercel.app/allService')
          },
          {
            path:'/addReview',
@@ -54,7 +54,7 @@ function App() {
          {
            path:'/serviceDetails/:id',
            element:<ServiceDetails></ServiceDetails>,
-           loader:({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+           loader:({params}) => fetch(`https://tasty-foods-server.vercel.app/services/${params.id}`)
            
          },
          {

@@ -23,7 +23,7 @@ const AddService = () => {
 		description
 	}
   
-	 fetch('http://localhost:5000/CreateService', {
+	 fetch('https://tasty-foods-server.vercel.app/CreateService', {
 		method: 'POST',
 		headers:{
 			'content-type': 'application/json'

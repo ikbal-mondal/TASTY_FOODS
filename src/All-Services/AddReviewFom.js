@@ -32,7 +32,7 @@ const AddReviewFom = () => {
 	}
   
 
-    fetch('http://localhost:5000/reviews' , {
+    fetch('https://tasty-foods-server.vercel.app/reviews' , {
 		 method: 'POST',
 		 headers: {
 			'content-type' : 'application/json'
@@ -55,7 +55,7 @@ const AddReviewFom = () => {
  }
   useEffect(()=> {
       
-	fetch(`http://localhost:5000/reviews/${_id}`)
+	fetch(`https://tasty-foods-server.vercel.app/reviews/${_id}`)
 	.then(res => res.json())
 	.then(data => setReviews(data))
 
