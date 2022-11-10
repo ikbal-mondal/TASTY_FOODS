@@ -20,8 +20,8 @@ const Make = () => {
 							</div>
 						</div>
 						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Per ei quaeque sensibus</h4>
-							<p className="mt-2 dark:text-gray-400">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
+							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">I prepare these dishes myself at home</h4>
+							
 						</div>
 						
 					</div>
@@ -34,8 +34,8 @@ const Make = () => {
 							</div>
 						</div>
 						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Cu imperdiet posidonium sed</h4>
-							<p className="mt-2 dark:text-gray-400">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
+							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">I make chicken burgers, so fun to eat</h4>
+							
 						</div>
 					</div>
 					<div className="flex">
@@ -47,8 +47,8 @@ const Make = () => {
 							</div>
 						</div>
 						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Nulla omittam sadipscing mel ne</h4>
-							<p className="mt-2 dark:text-gray-400">At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.</p>
+							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">We make g chicken burgers at home with different spices</h4>
+							
 						</div>
 					</div>
 				</div>

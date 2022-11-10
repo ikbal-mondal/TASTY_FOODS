@@ -1,21 +1,23 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Form } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const AddService = () => {
-
+  const {user} = useContext(AuthContext)
  const handleAddService = event => {
 	event.preventDefault();
 	const from = event.target;
 	const title = from.title.value;
     const  price = from.price.value;
+    const  email = from.email.value;
 	const photoURL = from.photoURL.value;
 	const description = from.description.value
 
 	const CreateService = {
- 
-		
 		title,
 		price,
+		email,
 		photoURL,
 		description
 	}
@@ -49,13 +51,18 @@ const AddService = () => {
 			<input  name='title' type="text" placeholder="Service Title " required className="block w-full p-2 rounded focus:outline-none focus:ring  text-black focus:ring-blue-600 dark:bg-gray-800" />
 		</div>
 		<div>
-			<label for="name" className="block mb-1 ml-1">Price</label>
-			<input  name='price' type="text" placeholder=" Service  Price " required className="block w-full p-2 rounded focus:outline-none focus:ring  text-black focus:ring-blue-600  dark:bg-gray-800" />
+			<label  className="block mb-1 ml-1">Yur Email</label>
+			<input  name='email' type="text" placeholder=" Your email" required className="block w-full p-2 rounded focus:outline-none focus:ring   text-black  focus:ring-blue-600  dark:bg-gray-800" defaultValue={user && user.email} readOnly />
 		</div>
 		
 		<div>
 			<label  className="block mb-1 ml-1">Photo Url</label>
 			<input  name='photoURL' type="text" placeholder=" Service  Photo Url" required className="block w-full p-2 rounded focus:outline-none focus:ring   text-black  focus:ring-blue-600  dark:bg-gray-800"  />
+		</div>
+		
+		<div>
+			<label for="name" className="block mb-1 ml-1">Price</label>
+			<input  name='price' type="text" placeholder=" Service  Price " required className="block w-full p-2 rounded focus:outline-none focus:ring  text-black focus:ring-blue-600  dark:bg-gray-800" />
 		</div>
          </div>
 		<div>

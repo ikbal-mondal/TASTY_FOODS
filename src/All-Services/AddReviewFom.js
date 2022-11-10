@@ -22,8 +22,8 @@ const AddReviewFom = () => {
 		FoodName: title,
 		email: email,
 		rating:rating,
-		message: message
-          
+		message: message,
+        
 	}
   
 

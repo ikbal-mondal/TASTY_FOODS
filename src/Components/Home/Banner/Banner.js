@@ -37,6 +37,7 @@ const Banner = () => {
                 Here is my home made  <b>burger</b> <b>One-Pan BBQ Baby</b> <b>kitchen</b>  
                  <b>Garlic Mac</b> <b>etc</b>  
                 </p>
+                <h2>I provide homemade food service.</h2>
                   </h3>
                   
                 </div>

@@ -1,13 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthProvider/AuthProvider';
 import AllService from './AllService';
+import NewAddService from './NewAddService/NewAddService';
 
 
 
 const All_Service = () => {
 
 const services = useLoaderData()
- console.log(services);
+
+const {user} = useContext(AuthContext)
+
+
+const [service,setService] = useState([])
+console.log(service);
+useEffect(()=> {
+   
+  fetch(`http://localhost:5000/CreateService?email=${user && user.email}`)
+  .then(res => res.json())
+  .then(data => setService(data))
+},[user && user.email])
+
+
+
+
     return (
         
            
@@ -23,7 +40,15 @@ const services = useLoaderData()
             }
 
 
+        
 
+            {
+                  service.map(newService => <NewAddService
+                  key={newService._id}
+                  newService={newService}
+                  ></NewAddService>)
+            }
+         
 
 
           </div>

@@ -1,7 +1,10 @@
 import React from 'react';
+import { useContext } from 'react';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const ReviewCard = ({review,handleRemove}) => {
-    const {FoodName,email,rating,message,_id} = review;
+	const {user} = useContext(AuthContext)
+    const {FoodName,email,rating,message,_id,} = review;
 
 
 
@@ -10,7 +13,7 @@ const ReviewCard = ({review,handleRemove}) => {
           <div className="container flex flex-col shadow-2xl shadow-slate-900 my-8 w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4">
-        <button onClick={() => handleRemove(_id)} className="btn btn-circle btn-outline">
+	    <button onClick={() => handleRemove(_id)} className="btn btn-circle btn-outline">
   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
 </button>
 			<div>
@@ -28,6 +31,8 @@ const ReviewCard = ({review,handleRemove}) => {
 	<div className="p-4 space-y-2 text-sm dark:text-gray-400">
 		<p className='text-xl'> Message: {message}</p>
 	</div>
+			
+	
 </div>  
         </div>
     );
